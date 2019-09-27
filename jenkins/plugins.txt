@@ -130,7 +130,6 @@ run-condition
 conditional-buildstep
 parameterized-trigger
 jquery
-build-pipeline-plugin
 puppet
 terraform
 view-job-filters
