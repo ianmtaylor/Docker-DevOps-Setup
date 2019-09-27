@@ -2,7 +2,7 @@
 
 # Start swarm
 * docker swarm init
-* may have to use --advertise-addr if multiple addresses
+* may have to use `docker swarm init --advertise-addr XXXXXXXX` if multiple addresses
 
 # Set username and password for jenkins
 * `echo "admin" | docker secret create jenkins-user -`
