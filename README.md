@@ -1,5 +1,6 @@
 # Docker-DevOps-Setup
-
+* Still in progress. Working on Mimicing DinD without actually spawning child containers. Instead I am trying to spawn sibling containers
+* https://itnext.io/docker-in-docker-521958d34efd
 # Start swarm
 * docker swarm init
 * may have to use `docker swarm init --advertise-addr XXXXXXXX` if multiple addresses
