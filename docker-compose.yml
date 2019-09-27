@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+  gitlab:
+    image: "ianmtaylor/gitlab"
+    restart: "always"
+    hostname: "gitlab"
+    ports:
+      - "8081:80"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url "http://gitlab"
+  jenkins-master:
+    image: ianmtaylor/jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    secrets:
+      - jenkins-user
+      - jenkins-pass
+secrets:
+  jenkins-user:
+    external: true
+  jenkins-pass:
+    external: true
