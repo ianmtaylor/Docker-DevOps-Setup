@@ -15,6 +15,8 @@
 # Changing jenkins and gitlab images
 * Dockerfiles for jenkins and gitlab images are stored in the dockerfiles folder
 * jenkins plugins list and groovy config are in the jenkinsconfig folder
+# Issues
+* Gitlab keeps reporting an unhealthy state and swarm reboots it each time. Need to fix
 
 # Sources
 https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup/
